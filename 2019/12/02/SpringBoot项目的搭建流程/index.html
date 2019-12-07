@@ -17,18 +17,22 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>Hello World | Hexo</title>
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <title>SpringBoot项目的搭建流程 | Hexo</title>
+  <meta name="description" content="环境: SpringBoot 2.2.1 idea   1.搭建项目所需的依赖  ==之后再pom.xml中还要引入JDBC的实现类druid连接池的依赖== 2.配置文件1因为引入了Druid连接池,所以要进行数据库的数据源的信息的配置  123456789#配置Druid的数据源spring :  datasource:    name : vue_jf    url : jdbc:mysql">
+<meta name="keywords" content="SpringBoot">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;25&#x2F;hello-world&#x2F;index.html">
+<meta property="og:title" content="SpringBoot项目的搭建流程">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;02&#x2F;SpringBoot%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="环境: SpringBoot 2.2.1 idea   1.搭建项目所需的依赖  ==之后再pom.xml中还要引入JDBC的实现类druid连接池的依赖== 2.配置文件1因为引入了Druid连接池,所以要进行数据库的数据源的信息的配置  123456789#配置Druid的数据源spring :  datasource:    name : vue_jf    url : jdbc:mysql">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-25T14:25:04.406Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;XiaoYaoXiaoYao&#x2F;image&#x2F;master&#x2F;blog&#x2F;20191202222105.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;XiaoYaoXiaoYao&#x2F;image&#x2F;master&#x2F;blog&#x2F;20191202222822.png">
+<meta property="og:updated_time" content="2019-12-02T14:49:02.326Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;XiaoYaoXiaoYao&#x2F;image&#x2F;master&#x2F;blog&#x2F;20191202222105.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://yoursite.com/2019/11/25/hello-world/index.html">
+  <link rel="canonical" href="http://yoursite.com/2019/12/02/SpringBoot%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -336,14 +340,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-hello-world" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-SpringBoot项目的搭建流程" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      SpringBoot项目的搭建流程
     </h1>
   
 
@@ -351,34 +355,43 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2019/11/25/hello-world/" class="article-date">
-	  <time datetime="2019-11-25T14:25:04.405Z" itemprop="datePublished">2019-11-25</time>
+	<a href="/2019/12/02/SpringBoot%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/" class="article-date">
+	  <time datetime="2019-12-02T14:07:32.000Z" itemprop="datePublished">2019-12-02</time>
 	</a>
 </span>
         
         
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a>
+  </span>
+
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/11/25/hello-world/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/12/02/SpringBoot%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/#comments" class="article-comment-link">Comments</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <h3 id="环境"><a href="#环境" class="headerlink" title="环境:"></a>环境:</h3><ul>
+<li>SpringBoot 2.2.1</li>
+<li>idea </li>
+</ul>
+<h2 id="1-搭建项目所需的依赖"><a href="#1-搭建项目所需的依赖" class="headerlink" title="1.搭建项目所需的依赖"></a>1.搭建项目所需的<code>依赖</code></h2><p><img src="https://raw.githubusercontent.com/XiaoYaoXiaoYao/image/master/blog/20191202222105.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/XiaoYaoXiaoYao/image/master/blog/20191202222822.png" alt=""></p>
+<p>==之后再pom.xml中还要引入JDBC的实现类druid连接池的依赖==</p>
+<h2 id="2-配置文件"><a href="#2-配置文件" class="headerlink" title="2.配置文件"></a>2.配置文件</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">因为引入了Druid连接池,所以要进行数据库的数据源的信息的配置</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#配置Druid的数据源</span></span><br><span class="line"><span class="attr">spring :</span></span><br><span class="line">  <span class="attr">datasource:</span></span><br><span class="line">    <span class="attr">name :</span> <span class="string">vue_jf</span></span><br><span class="line">    <span class="attr">url :</span> <span class="string">jdbc:mysql://localhost:3306/vue_jf?useSSL=false&amp;serverTimezone=UTC</span></span><br><span class="line">    <span class="attr">username:</span> <span class="string">root</span></span><br><span class="line">    <span class="attr">password:</span> <span class="string">root</span></span><br><span class="line">    <span class="attr">driver-class-name:</span> <span class="string">com.mysql.jdbc.Driver</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">com.alibaba.druid.pool.DruidDataSource</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<blockquote>
+<p>url : jdbc:mysql://localhost:3306/vue_jf==?useSSL=false&amp;serverTimezone=UTC== 不能少</p>
+</blockquote>
+<blockquote>
+<p>因为springboot中的thymeleaf,所以不用在配置静态资源的问题</p>
+</blockquote>
 
       
     </div>
@@ -388,7 +401,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://yoursite.com/2019/11/25/hello-world/" title="Hello World" target="_blank" rel="external">http://yoursite.com/2019/11/25/hello-world/</a>
+      <a href="http://yoursite.com/2019/12/02/SpringBoot%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/" title="SpringBoot项目的搭建流程" target="_blank" rel="external">http://yoursite.com/2019/12/02/SpringBoot%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -435,9 +448,13 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2019/11/26/hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA-%E5%BF%85%E7%9C%8B/" title="hexo博客的搭建"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
+      <a href="/2019/12/07/Java%E9%9D%A2%E8%AF%95%E9%A2%98/" title="Java面试题"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
     </li>
     
+    
+    <li class="next">
+      <a href="/2019/11/28/Spring%20Boot%20%E7%AC%94%E8%AE%B0/" title="Spring Boot 笔记"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
     
     
   </ul>

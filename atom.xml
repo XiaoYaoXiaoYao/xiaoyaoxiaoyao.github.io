@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-28T08:57:57.035Z</updated>
+  <updated>2019-12-07T07:11:19.930Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,83 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JVM笔记</title>
+    <link href="http://yoursite.com/2019/12/07/JVM%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2019/12/07/JVM%E7%AC%94%E8%AE%B0/</id>
+    <published>2019-12-07T06:57:58.000Z</published>
+    <updated>2019-12-07T07:11:19.930Z</updated>
+    
+    <content type="html"><![CDATA[<p>栈(Stack): 在函数中定义的一些<code>基本类型的变量</code>和<code>对象的引用变量(变量名)</code>都在函数的栈内存中分配</p><p>堆(Heap): 堆内存用来存放由<code>new创建出来的对象</code>和<code>数组</code></p><p>常量池: </p><p><a href="https://www.cnblogs.com/zzuli/p/9403928.html" target="_blank" rel="noopener"><a href="https://www.cnblogs.com/zzuli/p/9403928.html" target="_blank" rel="noopener">深入理解JVM内存分配和常量池</a></a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;栈(Stack): 在函数中定义的一些&lt;code&gt;基本类型的变量&lt;/code&gt;和&lt;code&gt;对象的引用变量(变量名)&lt;/code&gt;都在函数的栈内存中分配&lt;/p&gt;
+&lt;p&gt;堆(Heap): 堆内存用来存放由&lt;code&gt;new创建出来的对象&lt;/code&gt;和&lt;code&gt;数组&lt;/co
+      
+    
+    </summary>
+    
+    
+    
+      <category term="JVM" scheme="http://yoursite.com/tags/JVM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java面试题</title>
+    <link href="http://yoursite.com/2019/12/07/Java%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <id>http://yoursite.com/2019/12/07/Java%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
+    <published>2019-12-07T02:06:32.000Z</published>
+    <updated>2019-12-07T10:56:35.279Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-Java基础"><a href="#1-Java基础" class="headerlink" title="1.Java基础"></a>1.Java基础</h2><h3 id="1-1简单讲一下java的跨平台的原理"><a href="#1-1简单讲一下java的跨平台的原理" class="headerlink" title="1.1简单讲一下java的跨平台的原理"></a>1.1简单讲一下java的跨平台的原理</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">由于各个操作系统(windows,linux等)支持的指令集,不是完全一致的.就会让我们的程序在不同的操作系统上要执行不同程序代码.Java开发了适用于不同操作系统及位数的java虚拟机来屏蔽各个系统之间的差异,提供统一的接口.对于java开发者而言,只需在不同的操作系统上安装对应的不同java虚拟机,这时你的java程序只要遵循java规范,就可以在所有的操作系统上面运行java程序了.</span><br></pre></td></tr></table></figure><p><code>总结</code></p> <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java通过不同的系统,不同的版本,不同位数的java虚拟机(jvm),来屏蔽不同系统的指令集差异而对外提供统一的接口(java Api),对于我们普通的java开发者而言,只需要按照接口开发即可.如果系统需要部署到不同的环境是,只需要在系统上面按照对应版本的虚拟机即可.</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/XiaoYaoXiaoYao/image/master/blog/20191207102119.png" alt=""></p><h3 id="1-2讲一下java中的int数据占据几个字节"><a href="#1-2讲一下java中的int数据占据几个字节" class="headerlink" title="1.2讲一下java中的int数据占据几个字节"></a>1.2讲一下java中的int数据占据几个字节</h3><h5 id="java中的基本数据类型"><a href="#java中的基本数据类型" class="headerlink" title="java中的基本数据类型?"></a>java中的基本数据类型?</h5><h5 id="八种"><a href="#八种" class="headerlink" title="八种"></a>八种</h5><p><img src="https://raw.githubusercontent.com/XiaoYaoXiaoYao/image/master/blog/20191207102757.png" alt=""></p><h3 id="1-3面向对象的特征有哪些方面"><a href="#1-3面向对象的特征有哪些方面" class="headerlink" title="1.3面向对象的特征有哪些方面?"></a>1.3面向对象的特征有哪些方面?</h3><p>四大基本特征:<code>封装</code> <code>继承</code> <code>多态</code> <code>抽象</code></p><p><code>封装</code>:面向对象的封装性,即将对象封装成一个<code>高度自治和相对封闭</code>的个体,对象状态(属性) 由这个对象自己的行为(方法)来读取和改变.</p><p><code>继承</code>:在定义和实现一个类的时候,可以在一个已经存在的类的基础上来进行,<code>把这个已经存在的类所定义的内容作为自己的内容,并可以加入若干新的内容,或者修改原来的方法使之更适合特殊的需要</code>,这就是继承.<code>遗产继承</code></p><p><code>多态</code>:指的是程序中定义的引用变量所指向的具体类型和通过该引用变量发出的方法调用在编程时并不确定,而是在程序运行期间才会确定,即一个引用变量 到底会指向哪个类的实例对象,该引用变量发出的方法调用到底是哪个类中实现的方法,必须在由程序运行期间才能决定.</p><p>Object  obj =new xxx();</p><p>UserDao  userDao =new  UserDaoImpl();</p><p>靠的是父类或者接口定义的引用变量可以指向子类或具体实现类的实例对象,而程序调用的方法在<code>运行期</code>才能动态绑定,就是引用变量所指向的具体实例对象的方法,也就是内存里正在运行的那个对象的方法,而不是引用变量的类型中定义的方法.</p><h3 id="1-4有了基本数据类型-为什么还需要包装类型"><a href="#1-4有了基本数据类型-为什么还需要包装类型" class="headerlink" title="1.4有了基本数据类型,为什么还需要包装类型?"></a>1.4有了基本数据类型,为什么还需要包装类型?</h3><p>基本数据类型,java中提供了八种基本的数据类型</p><p>包装类型:每一个基本的数据类型都会一一对应一个包装类型</p><p>boolean –&gt;Boolean</p><p>int –&gt; Integer</p><p>装箱和拆箱:</p><p>装箱: 把基本数据类型转换成对应的包装类型</p><p>Integer.valueOf(1)</p><p>Integer  i =1; 自动装箱,实际上在编译时会调用Integer.valueOf方法来装箱</p><p>int j=i;//自动拆箱  </p><p>int j = i=intValue();//手动拆箱</p><p><img src="https://raw.githubusercontent.com/XiaoYaoXiaoYao/image/master/blog/20191207111016.png" alt=""></p><p>java是一个面向对象(OOP)的语言,而基本的数据类型,不具备面向对象的特性.</p><p>而包装类型是可以为null的</p><p>null :  Integer–&gt;null  </p><p>​        int  –&gt;0 </p><p> 用Integer 和int分别表示一个类的id</p><h3 id="1-5”-”和equals方法的区别"><a href="#1-5”-”和equals方法的区别" class="headerlink" title="1.5”==”和equals方法的区别"></a>1.5”==”和equals方法的区别</h3><p>== : 用来判断两个变量之间的值是否相等.变量就可以分为<code>基本数据类型变量</code>和<code>引用类型</code></p><p>如果是基本数据类型的变量直接比较值 而引用类型要比较对应的引用的内存的首地址.</p><p><img src="https://raw.githubusercontent.com/XiaoYaoXiaoYao/image/master/blog/20191207141333.png" alt=""></p><p><img src="https://raw.githubusercontent.com/XiaoYaoXiaoYao/image/master/blog/20191207144305.jpg" alt=""></p><p><strong>equals()</strong>：用来比较方法两个对象的内容是否相等。<br>注意：equals 方法不能用于基本数据类型的变量，如果没有对equals方法进行重写，则比较的是引用类型的变量所指向的<strong>对象的地址</strong>。</p><p>equals 方法</p><ul><li>Object类(超类)中的equals方法</li></ul><p><img src="https://raw.githubusercontent.com/XiaoYaoXiaoYao/image/master/blog/20191207145133.png" alt=""></p><ul><li>String类中对父类的equals方法进行了重写</li></ul><p><img src="https://raw.githubusercontent.com/XiaoYaoXiaoYao/image/master/blog/20191207145221.png" alt=""></p><ul><li>从上面可以看出:<ul><li>没有重写的equals方法只是调用了一下==,本质是一样的</li><li>String的equals方法比较的是值,==是比较的变量的值是否相同(<code>基本数据类型</code>: <u>值比较</u>; <code>引用数据类型</code>:<u>引用的对象的内存地址的比较</u>)</li></ul></li></ul><h3 id="1-6讲一下String-和String-Builder-的区别-final-StringBuilder和StringBuffer的区别"><a href="#1-6讲一下String-和String-Builder-的区别-final-StringBuilder和StringBuffer的区别" class="headerlink" title="1.6讲一下String 和String Builder 的区别(final)?StringBuilder和StringBuffer的区别?"></a>1.6讲一下String 和String Builder 的区别(final)?StringBuilder和StringBuffer的区别?</h3><h4 id="1-6-1内容是否可变"><a href="#1-6-1内容是否可变" class="headerlink" title="1.6.1内容是否可变"></a>1.6.1内容是否可变</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">在java中提供了三个类String,StringBuffer,StringBuilder 来表示和操作字符串.字符串就是多个字符的集合.</span><br><span class="line">首先要知道String类进过了<span class="keyword">final</span>修饰,所以String类型是内容不可变的字符串,String底层使用了一个不可变的字符数组 (<span class="keyword">final</span> <span class="keyword">char</span>[])</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/XiaoYaoXiaoYao/image/master/blog/20191207151929.png" alt=""></p><p>String str =new  String(“bbb”);</p><p>而StringBuilder ,StringBuffer,是内容可以改变的字符串.StringBuilder,StringBuffer底层使用的是可变的字符数组(没有使用final修饰)</p><p><img src="https://raw.githubusercontent.com/XiaoYaoXiaoYao/image/master/blog/20191207152719.png" alt=""></p><h4 id="1-6-2拼接字符串"><a href="#1-6-2拼接字符串" class="headerlink" title="1.6.2拼接字符串"></a>1.6.2<code>拼接字符串</code></h4><p>String进行拼接String c=”a”+”b”;</p><p>StringBuilder sb=new  StringBuilder();</p><p>sb.append(“a”).append(“c”);</p><p><code>拼接字符串不能使用String进行拼接,要使用StringBuilder或者StringBuffer</code></p><h4 id="1-6-3线程安全"><a href="#1-6-3线程安全" class="headerlink" title="1.6.3线程安全"></a>1.6.3<code>线程安全</code></h4><p><code>StringBuilder</code>是<code>线程不安全</code>的,效率高;而<code>StringBuffer</code>是<code>线程安全</code>的,同时代价就是效率较低</p><h3 id="1-7讲一下java中的集合"><a href="#1-7讲一下java中的集合" class="headerlink" title="1.7讲一下java中的集合?"></a>1.7讲一下java中的集合?</h3><p>java中的集合分为<code>value,key-value</code>(<code>Collection</code>,<code>Map</code>)两种</p><ol><li>存储值又分为 List和Set</li></ol><ul><li>List是有序的,可以重复的</li><li>Set是无序的,不可以重复的.根据equals和hashcode判断,也就是如果一个对象要存储在Set中,必须重写equals和hashcode方法</li></ul><ol start="2"><li>存储key-value的为map</li></ol><h3 id="1-8ArrayList-和LinkedList-的区别"><a href="#1-8ArrayList-和LinkedList-的区别" class="headerlink" title="1.8ArrayList 和LinkedList 的区别?"></a>1.8ArrayList 和LinkedList 的区别?</h3><p>List常用的ArrayList和LinkedList .区别和使用场景?</p><p>ArrayList底层使用的是<code>数组</code>.LinkedList使用的是<code>链表</code></p><p><u>数组查询</u>具有<code>索引查询特定的元素比较快</code>,而<code>插入和删除和修改比较慢</code>(数组在内存中是一块连续的内存,如果插入或删除是需要移动内存).</p><p>链表不要求内存是连续的,在当前元素中存放下一个或者上一个元素的地址.查询时需要从头部开始,一个一个的找.所以<code>查询的效率低</code>.插入时不需要移动内存,只需要改变引用指向即可.所以<code>插入或者删除的效率高</code>.</p><p><code>ArrayList使用在查询比较多,但是插入和删除比较少的情况,而LinkedList使用在查询比较少而插入和删除比较多的情况</code></p><h3 id="1-9将一下HashMap和HashTable的区别"><a href="#1-9将一下HashMap和HashTable的区别" class="headerlink" title="1.9将一下HashMap和HashTable的区别?"></a>1.9将一下HashMap和HashTable的区别?</h3><p>相同点: HashMap和 HashTable都可以用来存储key-value的数据</p><p>区别: </p><ul><li>HashMap是可以把null作为可以或者value的,而hashTable是不可以的</li><li>HashMap是线程不安全的,效率较高.而hashTable是线程安全的,效率较低</li></ul><p>如果想使用线程安全的同时效率高的?</p><p><code>ConcurrentHashMap</code>(concurrent 并行的)</p><h3 id="1-10实现一个拷贝文件的工具类使用字节流还是字符流"><a href="#1-10实现一个拷贝文件的工具类使用字节流还是字符流" class="headerlink" title="1.10实现一个拷贝文件的工具类使用字节流还是字符流?"></a>1.10实现一个拷贝文件的工具类使用字节流还是字符流?</h3><p>我们拷贝的文件不确定是只包含字符流，有可以能有字节流(图片、声音、图像等)，为考虑到通用性，要使用字节流。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;1-Java基础&quot;&gt;&lt;a href=&quot;#1-Java基础&quot; class=&quot;headerlink&quot; title=&quot;1.Java基础&quot;&gt;&lt;/a&gt;1.Java基础&lt;/h2&gt;&lt;h3 id=&quot;1-1简单讲一下java的跨平台的原理&quot;&gt;&lt;a href=&quot;#1-1简单讲一下ja
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Java面试题" scheme="http://yoursite.com/tags/Java%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SpringBoot项目的搭建流程</title>
+    <link href="http://yoursite.com/2019/12/02/SpringBoot%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/"/>
+    <id>http://yoursite.com/2019/12/02/SpringBoot%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/</id>
+    <published>2019-12-02T14:07:32.000Z</published>
+    <updated>2019-12-02T14:49:02.326Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="环境"><a href="#环境" class="headerlink" title="环境:"></a>环境:</h3><ul><li>SpringBoot 2.2.1</li><li>idea </li></ul><h2 id="1-搭建项目所需的依赖"><a href="#1-搭建项目所需的依赖" class="headerlink" title="1.搭建项目所需的依赖"></a>1.搭建项目所需的<code>依赖</code></h2><p><img src="https://raw.githubusercontent.com/XiaoYaoXiaoYao/image/master/blog/20191202222105.png" alt=""></p><p><img src="https://raw.githubusercontent.com/XiaoYaoXiaoYao/image/master/blog/20191202222822.png" alt=""></p><p>==之后再pom.xml中还要引入JDBC的实现类druid连接池的依赖==</p><h2 id="2-配置文件"><a href="#2-配置文件" class="headerlink" title="2.配置文件"></a>2.配置文件</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">因为引入了Druid连接池,所以要进行数据库的数据源的信息的配置</span><br></pre></td></tr></table></figure><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#配置Druid的数据源</span></span><br><span class="line"><span class="attr">spring :</span></span><br><span class="line">  <span class="attr">datasource:</span></span><br><span class="line">    <span class="attr">name :</span> <span class="string">vue_jf</span></span><br><span class="line">    <span class="attr">url :</span> <span class="string">jdbc:mysql://localhost:3306/vue_jf?useSSL=false&amp;serverTimezone=UTC</span></span><br><span class="line">    <span class="attr">username:</span> <span class="string">root</span></span><br><span class="line">    <span class="attr">password:</span> <span class="string">root</span></span><br><span class="line">    <span class="attr">driver-class-name:</span> <span class="string">com.mysql.jdbc.Driver</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">com.alibaba.druid.pool.DruidDataSource</span></span><br></pre></td></tr></table></figure><blockquote><p>url : jdbc:mysql://localhost:3306/vue_jf==?useSSL=false&amp;serverTimezone=UTC== 不能少</p></blockquote><blockquote><p>因为springboot中的thymeleaf,所以不用在配置静态资源的问题</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;环境&quot;&gt;&lt;a href=&quot;#环境&quot; class=&quot;headerlink&quot; title=&quot;环境:&quot;&gt;&lt;/a&gt;环境:&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;SpringBoot 2.2.1&lt;/li&gt;
+&lt;li&gt;idea &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;1-搭建项目所需的依赖
+      
+    
+    </summary>
+    
+    
+    
+      <category term="SpringBoot" scheme="http://yoursite.com/tags/SpringBoot/"/>
+    
+  </entry>
   
   <entry>
     <title>Spring Boot 笔记</title>
