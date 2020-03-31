@@ -2,7 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://yoursite.com/2019/12/07/Java%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
-    <lastmod>2019-12-07</lastmod>
+    <lastmod>2020-03-31</lastmod>
+  </url>  <url>
+    <loc>http://yoursite.com/2019/12/15/%E9%9D%A2%E8%AF%95%E7%9C%9F%E9%A2%98/</loc>
+    <lastmod>2019-12-29</lastmod>
   </url>  <url>
     <loc>http://yoursite.com/2019/12/07/JVM%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2019-12-07</lastmod>
