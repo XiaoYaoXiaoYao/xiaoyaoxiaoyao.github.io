@@ -17,11 +17,12 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>Spring Boot 笔记 | XiaoYao_博客</title>
+  <title>SpringBoot笔记 | XiaoYao_博客</title>
   <meta name="description" content="==Spring Boot 笔记==一.Spring Boot 简介1.Spring Boot简介 简化Spring应用开发的一个框架 整个Spring技术栈的一个大整合 J2EE开发的一站式解决方案  2.环境准备 –jdk1.8：Spring Boot 推荐jdk1.7及以上；java version “1.8.0_112” –maven3.x：maven 3.3以上版本；Apache Mav">
+<meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Spring Boot 笔记">
-<meta property="og:url" content="https:&#x2F;&#x2F;xiaoyaoxiaoyao.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;Spring%20Boot%20%E7%AC%94%E8%AE%B0&#x2F;index.html">
+<meta property="og:title" content="SpringBoot笔记">
+<meta property="og:url" content="https:&#x2F;&#x2F;xiaoyaoxiaoyao.github.io&#x2F;2019&#x2F;12&#x2F;07&#x2F;Spring%20Boot%20%E7%AC%94%E8%AE%B0&#x2F;index.html">
 <meta property="og:site_name" content="XiaoYao_博客">
 <meta property="og:description" content="==Spring Boot 笔记==一.Spring Boot 简介1.Spring Boot简介 简化Spring应用开发的一个框架 整个Spring技术栈的一个大整合 J2EE开发的一站式解决方案  2.环境准备 –jdk1.8：Spring Boot 推荐jdk1.7及以上；java version “1.8.0_112” –maven3.x：maven 3.3以上版本；Apache Mav">
 <meta property="og:locale" content="zh-CN">
@@ -32,12 +33,12 @@
 <meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;XiaoYaoXiaoYao&#x2F;image&#x2F;master&#x2F;blog&#x2F;20191128154000.png">
 <meta property="og:image" content="c:&#x2F;Users&#x2F;laoyu&#x2F;Desktop&#x2F;%E6%A1%86%E6%9E%B6_itcast&#x2F;spring%20boot&#x2F;Spring%20Boot%20%E7%AC%94%E8%AE%B0+%E8%AF%BE%E4%BB%B6&#x2F;images&#x2F;%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20180130161620.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;XiaoYaoXiaoYao&#x2F;image&#x2F;master&#x2F;blog&#x2F;20191128161721.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;xiaoyaoxiaoyao.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;Spring%20Boot%20%E7%AC%94%E8%AE%B0&#x2F;images&#x2F;2018-02-04_123955.png">
-<meta property="og:updated_time" content="2019-11-28T08:57:57.035Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;xiaoyaoxiaoyao.github.io&#x2F;2019&#x2F;12&#x2F;07&#x2F;Spring%20Boot%20%E7%AC%94%E8%AE%B0&#x2F;images&#x2F;2018-02-04_123955.png">
+<meta property="og:updated_time" content="2020-05-19T15:26:22.217Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;XiaoYaoXiaoYao&#x2F;image&#x2F;master&#x2F;blog&#x2F;20191128150346.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://xiaoyaoxiaoyao.github.io/2019/11/28/Spring%20Boot%20%E7%AC%94%E8%AE%B0/index.html">
+  <link rel="canonical" href="https://xiaoyaoxiaoyao.github.io/2019/12/07/Spring%20Boot%20%E7%AC%94%E8%AE%B0/index.html">
   
     <link rel="alternate" href="/atom.xml" title="XiaoYao_博客" type="application/atom+xml">
   
@@ -223,7 +224,7 @@
   <div class="widget">
     <h3 class="widget-title">分类</h3>
     <div class="widget-body">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%96%B0%E7%9A%84%E5%88%86%E7%B1%BB/">新的分类</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/JVM/">JVM</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SpringBoot/">SpringBoot</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%96%B0%E7%9A%84%E5%88%86%E7%B1%BB/">新的分类</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/">面试题</a><span class="category-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -233,7 +234,7 @@
   <div class="widget">
     <h3 class="widget-title">标签</h3>
     <div class="widget-body">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JVM/" rel="tag">JVM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="tag">Java面试题</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo%E5%8D%9A%E5%AE%A2/" rel="tag">hexo博客</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%96%B0%E7%9A%84%E6%A0%87%E7%AD%BE/" rel="tag">新的标签</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%96%B0%E7%9A%84%E6%A0%87%E7%AD%BE/" rel="tag">新的标签</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -243,7 +244,7 @@
   <div class="widget">
     <h3 class="widget-title">标签云</h3>
     <div class="widget-body tagcloud">
-      <a href="/tags/JVM/" style="font-size: 13px;">JVM</a> <a href="/tags/Java%E9%9D%A2%E8%AF%95%E9%A2%98/" style="font-size: 14px;">Java面试题</a> <a href="/tags/SpringBoot/" style="font-size: 13px;">SpringBoot</a> <a href="/tags/hexo%E5%8D%9A%E5%AE%A2/" style="font-size: 13px;">hexo博客</a> <a href="/tags/%E6%96%B0%E7%9A%84%E6%A0%87%E7%AD%BE/" style="font-size: 13px;">新的标签</a>
+      <a href="/tags/Java/" style="font-size: 14px;">Java</a> <a href="/tags/hexo/" style="font-size: 13px;">hexo</a> <a href="/tags/%E6%96%B0%E7%9A%84%E6%A0%87%E7%AD%BE/" style="font-size: 13px;">新的标签</a>
     </div>
   </div>
 
@@ -252,7 +253,7 @@
   <div class="widget">
     <h3 class="widget-title">归档</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">十二月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">十二月 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -283,7 +284,7 @@
             
             <div class="item-inner">
               <p class="item-category">
-                
+                <a class="category-link" href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/">面试题</a>
               </p>
               <p class="item-title">
                 <a href="/2019/12/15/%E9%9D%A2%E8%AF%95%E7%9C%9F%E9%A2%98/" class="title">面试真题</a>
@@ -298,7 +299,7 @@
             
             <div class="item-inner">
               <p class="item-category">
-                
+                <a class="category-link" href="/categories/JVM/">JVM</a>
               </p>
               <p class="item-title">
                 <a href="/2019/12/07/JVM%E7%AC%94%E8%AE%B0/" class="title">JVM笔记</a>
@@ -313,13 +314,13 @@
             
             <div class="item-inner">
               <p class="item-category">
-                
+                <a class="category-link" href="/categories/SpringBoot/">SpringBoot</a>
               </p>
               <p class="item-title">
-                <a href="/2019/12/07/Java%E9%9D%A2%E8%AF%95%E9%A2%98/" class="title">Java面试题</a>
+                <a href="/2019/12/07/Spring%20Boot%20%E7%AC%94%E8%AE%B0/" class="title">SpringBoot笔记</a>
               </p>
               <p class="item-date">
-                <time datetime="2019-12-07T02:06:32.000Z" itemprop="datePublished">2019-12-07</time>
+                <time datetime="2019-12-07T06:57:58.000Z" itemprop="datePublished">2019-12-07</time>
               </p>
             </div>
           </li>
@@ -328,13 +329,13 @@
             
             <div class="item-inner">
               <p class="item-category">
-                
+                <a class="category-link" href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/">面试题</a>
               </p>
               <p class="item-title">
-                <a href="/2019/12/02/SpringBoot%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/" class="title">SpringBoot项目的搭建流程</a>
+                <a href="/2019/12/07/Java%E9%9D%A2%E8%AF%95%E9%A2%98/" class="title">Java面试题</a>
               </p>
               <p class="item-date">
-                <time datetime="2019-12-02T14:07:32.000Z" itemprop="datePublished">2019-12-02</time>
+                <time datetime="2019-12-07T02:06:32.000Z" itemprop="datePublished">2019-12-07</time>
               </p>
             </div>
           </li>
@@ -359,7 +360,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Spring Boot 笔记
+      SpringBoot笔记
     </h1>
   
 
@@ -367,16 +368,26 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2019/11/28/Spring%20Boot%20%E7%AC%94%E8%AE%B0/" class="article-date">
-	  <time datetime="2019-11-28T08:58:32.356Z" itemprop="datePublished">2019-11-28</time>
+	<a href="/2019/12/07/Spring%20Boot%20%E7%AC%94%E8%AE%B0/" class="article-date">
+	  <time datetime="2019-12-07T06:57:58.000Z" itemprop="datePublished">2019-12-07</time>
 	</a>
 </span>
         
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/SpringBoot/">SpringBoot</a>
+  </span>
+
         
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link" href="/tags/Java/" rel="tag">Java</a>
+  </span>
+
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/11/28/Spring%20Boot%20%E7%AC%94%E8%AE%B0/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/12/07/Spring%20Boot%20%E7%AC%94%E8%AE%B0/#comments" class="article-comment-link">评论</a></span>
         
 	
 		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 6.1k(字)</span>
@@ -705,7 +716,7 @@ public void addInterceptors(InterceptorRegistry registry) {
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://xiaoyaoxiaoyao.github.io/2019/11/28/Spring%20Boot%20%E7%AC%94%E8%AE%B0/" title="Spring Boot 笔记" target="_blank" rel="external">https://xiaoyaoxiaoyao.github.io/2019/11/28/Spring%20Boot%20%E7%AC%94%E8%AE%B0/</a>
+      <a href="https://xiaoyaoxiaoyao.github.io/2019/12/07/Spring%20Boot%20%E7%AC%94%E8%AE%B0/" title="SpringBoot笔记" target="_blank" rel="external">https://xiaoyaoxiaoyao.github.io/2019/12/07/Spring%20Boot%20%E7%AC%94%E8%AE%B0/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -752,12 +763,12 @@ public void addInterceptors(InterceptorRegistry registry) {
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2019/12/02/SpringBoot%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/" title="SpringBoot项目的搭建流程"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="/2019/12/07/JVM%E7%AC%94%E8%AE%B0/" title="JVM笔记"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
     <li class="next">
-      <a href="/2019/11/26/hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA-%E5%BF%85%E7%9C%8B/" title="hexo博客的搭建"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2019/12/07/Java%E9%9D%A2%E8%AF%95%E9%A2%98/" title="Java面试题"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
