@@ -17,18 +17,27 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>Hello World | XiaoYao_博客</title>
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <title>Ajax笔记 | XiaoYao_博客</title>
+  <meta name="description" content="ajax发送json数据时为什么需要设置contentType: “application&#x2F;json” 1. ajax发送json数据时设置contentType: “application&#x2F;json”和不设置时到底有什么区别？contentType: “application&#x2F;json”，首先明确一点，这也是一种文本类型（和text&#x2F;json一样），表示json格式的字符串，如果ajax中设置为">
+<meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https:&#x2F;&#x2F;xiaoyaoxiaoyao.github.io&#x2F;2019&#x2F;11&#x2F;25&#x2F;hello-world&#x2F;index.html">
+<meta property="og:title" content="Ajax笔记">
+<meta property="og:url" content="https:&#x2F;&#x2F;xiaoyaoxiaoyao.github.io&#x2F;2020&#x2F;07&#x2F;24&#x2F;ajax%E4%B8%AD%E7%9A%84data%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E4%BC%A0%E9%80%92%E6%97%B6%E7%9A%84%E8%AE%B0%E5%BD%95&#x2F;index.html">
 <meta property="og:site_name" content="XiaoYao_博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="ajax发送json数据时为什么需要设置contentType: “application&#x2F;json” 1. ajax发送json数据时设置contentType: “application&#x2F;json”和不设置时到底有什么区别？contentType: “application&#x2F;json”，首先明确一点，这也是一种文本类型（和text&#x2F;json一样），表示json格式的字符串，如果ajax中设置为">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-25T14:25:04.406Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;XiaoYaoXiaoYao&#x2F;image&#x2F;master&#x2F;blog&#x2F;20200724161036.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;XiaoYaoXiaoYao&#x2F;image&#x2F;master&#x2F;blog&#x2F;20200724161708.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;XiaoYaoXiaoYao&#x2F;image&#x2F;master&#x2F;blog&#x2F;20200724161831.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;XiaoYaoXiaoYao&#x2F;image&#x2F;master&#x2F;blog&#x2F;20200724162840.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;XiaoYaoXiaoYao&#x2F;image&#x2F;master&#x2F;blog&#x2F;20200724162950.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;XiaoYaoXiaoYao&#x2F;image&#x2F;master&#x2F;blog&#x2F;20200724163023.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;XiaoYaoXiaoYao&#x2F;image&#x2F;master&#x2F;blog&#x2F;20200724163106.png">
+<meta property="og:updated_time" content="2020-07-24T08:36:35.497Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;XiaoYaoXiaoYao&#x2F;image&#x2F;master&#x2F;blog&#x2F;20200724161036.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://xiaoyaoxiaoyao.github.io/2019/11/25/hello-world/index.html">
+  <link rel="canonical" href="https://xiaoyaoxiaoyao.github.io/2020/07/24/ajax%E4%B8%AD%E7%9A%84data%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E4%BC%A0%E9%80%92%E6%97%B6%E7%9A%84%E8%AE%B0%E5%BD%95/index.html">
   
     <link rel="alternate" href="/atom.xml" title="XiaoYao_博客" type="application/atom+xml">
   
@@ -343,14 +352,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-hello-world" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-ajax中的data中的数据传递时的记录" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      Ajax笔记
     </h1>
   
 
@@ -358,41 +367,64 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2019/11/25/hello-world/" class="article-date">
-	  <time datetime="2019-11-25T14:25:04.405Z" itemprop="datePublished">2019-11-25</time>
+	<a href="/2020/07/24/ajax%E4%B8%AD%E7%9A%84data%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E4%BC%A0%E9%80%92%E6%97%B6%E7%9A%84%E8%AE%B0%E5%BD%95/" class="article-date">
+	  <time datetime="2020-07-24T08:36:58.000Z" itemprop="datePublished">2020-07-24</time>
 	</a>
 </span>
         
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/Ajax/">Ajax</a>
+  </span>
+
         
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link" href="/tags/Java/" rel="tag">Java</a>
+  </span>
+
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/11/25/hello-world/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/07/24/ajax%E4%B8%AD%E7%9A%84data%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E4%BC%A0%E9%80%92%E6%97%B6%E7%9A%84%E8%AE%B0%E5%BD%95/#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 73(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1.3k(字)</span>
 	
 	
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1(分)</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 5(分)</span>
 	
 
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <p><a href="https://www.cnblogs.com/nizuimeiabc1/p/11030159.html" target="_blank" rel="noopener">ajax发送json数据时为什么需要设置contentType: “application/json”</a></p>
+<p><strong>1. ajax发送json数据时设置contentType: “application/json”和不设置时到底有什么区别？</strong><br>contentType: “application/json”，首先明确一点，这也是一种文本类型（和text/json一样），表示json格式的字符串，如果ajax中设置为该类型，则发送的json对象必须要使用JSON.stringify进行序列化成字符串才能和设定的这个类型匹配。同时，对应的后端如果使用了Spring，接收时需要使用@RequestBody来注解，这样才能将发送过来的json字符串解析绑定到对应的 pojo 属性上。另外，需注意一点，json字符串在书写时名称部分需要加上“”双引号，以免一些json解析器无法识别。</p>
+<p>如ajax 请求时不设置任何contentType，默认将使用contentType: “application/json”application/x-www-form-urlencoded，这种格式的特点就是，name/value 成为一组，<br>每组之间用 &amp; 联接，而 name与value 则是使用 = 连接。如： <a href="http://www.baidu.com/query?user=username&amp;pass=password" target="_blank" rel="noopener">www.baidu.com/query?user=username&amp;pass=password</a> 这是get请求, 而 post 请求则是使用请求体，参数不在 url 中，在请求体中的参数表现形式也是: user=username&amp;pass=password的形式。使用这种contentType时，对于简单的json对象类型，如：{“a”:1,”b”:2,”c”:3} 这种，将也会被转成user=username&amp;pass=password 这种形式发送到服务端。而服务端接收时就按照正常从from表单中接收参数那样接收即可，不需设置@RequestBody之类的注解。但对于复杂的json 结构数据，这种方式处理起来就相对要困难，服务端解析时也难以解析，所以，就有了application/json 这种类型，这是一种数据格式的申明，明确告诉服务端是什么格式的数据，服务端只需要根据这种格式的特点来解析数据即可。</p>
+<p>总结：<br>1).ajax 如果发送的是json字符串，服务端接收时必须要使用@RequestBody注解。始终记住，json字符串，”application/json”，@RequestBody 这三者之间是一一对应的，要有都有，要没有都没有。<br>2).如果发送的是json对象，contentType不能设置为”application/json”，需使用默认的类型（application/x-www-form-urlencoded，为什么呢？这种类型最后还是会把json对象类型的参数转为user=username&amp;pass=password这种形式后再发送，需要明白一点：这种转换时只能识别json对象类型，不能识别json字符串类型）。</p>
+<p><strong>2.application/x-www-form-urlencoded 和 application/json 两种类型的数据在后端如何接收并解析？</strong><br>application/x-www-form-urlencoded 这种类型的参数提交方式有get和post两种，这两种方式的区别是前者把编码后的user=username&amp;pass=password这种形式的参数放在url上进行提交，后者是放在请求报文的请求体部分进行发送，只是发送数据时数据放的位置不一样。服务端收到 user=username&amp;pass=password 这种形式的参数后，原生的Servlet使用request.getParameter(“user”)的这种形式即可获取参数，spring mvc 中 框架可自动根据参数名进行匹配，即表单元素的name属性和接收参数的名称一样时即可自动匹配，如果不一样，还可以使用@RequestParam的方式匹配。</p>
+<p>application/json 字符串数据原生的Servlet中可以使用request.getParameterMap()来获取，但需注意，这种只能获取Get方式传入的数据。post传入的需要使用输入流的方式来读取。在spring mvc中通过@RequestBody来解析并绑定json字符串参数到方法入参。</p>
+<p><strong>补充知识（摘录,博文来源：**</strong><a href="https://blog.csdn.net/ff906317011/article/details/78552426****）：" target="_blank" rel="noopener">https://blog.csdn.net/ff906317011/article/details/78552426****）：</a>**</p>
+<p> <strong>@RequestBody 注解详解</strong></p>
+<p><strong>作用：</strong></p>
+<p>1) 该注解用于读取Request请求的body部分数据，使用系统默认配置的HttpMessageConverter进行解析，然后把相应的数据绑定到要返回的对象上；<br>2) 再把HttpMessageConverter返回的对象数据绑定到 controller中方法的参数上。</p>
+<p><strong>使用时机：</strong></p>
+<p><strong>A) GET、POST方式提时， 根据request header Content-Type的值来判断:</strong></p>
+<p><strong>1）application/x-www-form-urlencoded， 可选（即非必须，因为这种情况的数据@RequestParam, @ModelAttribute也可以处理，当然@RequestBody也能处理）；</strong><br><strong>2）multipart/form-data, 不能处理（即使用@RequestBody不能处理这种格式的数据）；</strong><br><strong>3）其他格式， 必须（其他格式包括application/json, application/xml等。这些格式的数据，必须使用@RequestBody来处理）；</strong></p>
+<p><strong>B) PUT方式提交时， 根据request header Content-Type的值来判断:</strong></p>
+<p><strong>application/x-www-form-urlencoded， 必须；multipart/form-data, 不能处理；其他格式， 必须.</strong> </p>
+<p><img src="https://raw.githubusercontent.com/XiaoYaoXiaoYao/image/master/blog/20200724161036.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/XiaoYaoXiaoYao/image/master/blog/20200724161708.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/XiaoYaoXiaoYao/image/master/blog/20200724161831.png" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">前端使用post传递数据,传入的obj是对象类型,没有写contextType,那么默认就是application/json”application/x-www-form-urlencoded,因为是post方式传递,所以参数会放在请求体中的form-data中,所以后端直接使用String  roleId 等等来接受参数</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">虽然能接受到参数,但是复杂的json对象就不能接收到了,String  name (Joe),所以需要在ajax中添加contentType:&quot;application/json&quot;,同时需要将obj对象转换为json类型的字符串,而后端接收需要使用@RequestBody User user 来接收</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p><img src="https://raw.githubusercontent.com/XiaoYaoXiaoYao/image/master/blog/20200724162840.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/XiaoYaoXiaoYao/image/master/blog/20200724162950.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/XiaoYaoXiaoYao/image/master/blog/20200724163023.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/XiaoYaoXiaoYao/image/master/blog/20200724163106.png" alt=""></p>
 
       
     </div>
@@ -402,7 +434,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://xiaoyaoxiaoyao.github.io/2019/11/25/hello-world/" title="Hello World" target="_blank" rel="external">https://xiaoyaoxiaoyao.github.io/2019/11/25/hello-world/</a>
+      <a href="https://xiaoyaoxiaoyao.github.io/2020/07/24/ajax%E4%B8%AD%E7%9A%84data%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E4%BC%A0%E9%80%92%E6%97%B6%E7%9A%84%E8%AE%B0%E5%BD%95/" title="Ajax笔记" target="_blank" rel="external">https://xiaoyaoxiaoyao.github.io/2020/07/24/ajax%E4%B8%AD%E7%9A%84data%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E4%BC%A0%E9%80%92%E6%97%B6%E7%9A%84%E8%AE%B0%E5%BD%95/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -448,10 +480,10 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2019/11/26/hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA-%E5%BF%85%E7%9C%8B/" title="hexo博客的搭建"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-    </li>
     
+    <li class="next">
+      <a href="/2019/12/15/%E9%9D%A2%E8%AF%95%E7%9C%9F%E9%A2%98/" title="面试真题"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
     
     
   </ul>
